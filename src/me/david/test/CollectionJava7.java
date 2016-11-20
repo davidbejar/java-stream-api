@@ -9,7 +9,12 @@ import me.david.test.enumerates.TransactionType;
 
 public class CollectionJava7 {
 
-	public List<Integer> getOrderedGroceriesTransactions(List<Transaction> transactions) {
+	/**
+	 *
+	 * @param transactions
+	 * @return
+	 */
+	public List<Integer> getOrderedGroceriesTransactionIds(List<Transaction> transactions) {
 		List<Transaction> groceryTransactions = new ArrayList<>();
 		for (Transaction t : transactions) {
 			if (t.getType() == TransactionType.GROCERIES) {
