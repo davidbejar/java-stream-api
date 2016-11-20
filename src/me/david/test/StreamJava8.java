@@ -8,6 +8,11 @@ import me.david.test.enumerates.TransactionType;
 
 public class StreamJava8 {
 
+	/**
+	 *
+	 * @param transactions
+	 * @return
+	 */
 	public List<Integer> getOrderedGroceriesTransactionIds(List<Transaction> transactions) {
 		Comparator<Transaction> byValue = Comparator.comparing(Transaction::getValue);
 		List<Integer> transactionsIds = transactions.stream().filter(t -> t.getType() == TransactionType.GROCERIES)
