@@ -1,5 +1,9 @@
 package me.david.test.enumerates;
 
+/**
+ * @author David Bejar
+ *
+ */
 public enum TransactionType {
 		GROCERIES,
 		CINEMA,

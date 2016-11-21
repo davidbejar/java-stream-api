@@ -7,12 +7,17 @@ import java.util.List;
 
 import me.david.test.enumerates.TransactionType;
 
+/**
+ * @author David Bejar
+ *
+ */
 public class CollectionJava7 {
 
 	/**
-	 *
+	 * Uses traditional collection approach to obtain the ordered IDs
+	 * 
 	 * @param transactions
-	 * @return
+	 * @return list of ordered transaction IDs
 	 */
 	public List<Integer> getOrderedGroceriesTransactionIds(List<Transaction> transactions) {
 		List<Transaction> groceryTransactions = new ArrayList<>();
